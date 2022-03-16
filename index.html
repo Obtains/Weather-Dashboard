@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link ref="stylesheet" href="./assets/style.css"> 
-    <title>Weather Dashboard</title>
+
+    <title> David's Weather Dashboard</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link ref="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.24.0/moment.min.js"></script>
 </head>
 <body>
+    <div class="container-fluid">
+        <div class="row navbar navbar-light bg-light">
+            <div class="col-12 text-center">
+                <h1 class="navbar-brand pb-0 px-0">Weather Dashboard</h1>
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-10 col-md-3 bg-light pt-3">
+                <h4>Search for a City:</h4>
+                <form>
+                    <div class="form-info input-info">
+                        <input type="text" class="form-access" id="search-city" placeholder="Enter City Here">
+                        <div class="input-info-append">
+                            <button class="btn btn-info" type="button" id="search-city-btn">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="./assets/script.js"></script>
 </body>
 </html>
