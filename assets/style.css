@@ -1,0 +1,16 @@
+html, body .container-info, .content-row {
+    height: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.city-btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.data {
+    background-color: bisque;
+}
