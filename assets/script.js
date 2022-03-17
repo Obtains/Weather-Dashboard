@@ -3,11 +3,11 @@ var currentCity = $("#current-city");
 var currentTemperature = $("#current-temp");
 var currentHumidity = $("#current-humidity");
 var currentWindSpeed = $("#current-wind-speed");
-var UVindex = $("#uv-index");
+var UvIndex = $("#uv-index");
 var weatherInfo = $("#weather-info");
 var searchHistoryList = $('#search-history-list');
 var searchCityInput = $("#search-city");
-var searchCityButton = $("#search-city-button");
+var searchCityBtn = $("#search-city-button");
 var clearHistoryButton = $("#clear-history");
 
 // OpenWeather API Key //
@@ -32,7 +32,7 @@ $(document).on("submit", function(){
     searchCityInput.val(""); 
 });
 
-searchCityButton.on("click", function(event){
+searchCityBtn.on("click", function(event){
     event.preventDefault();
 
     var searchVal = searchCityInput.val().trim();
@@ -87,7 +87,7 @@ function currentConditions(searchVal) {
             url: UVurl,
             method: "GET"
         }).then(function(response){
-            UVindex.text(response.value);
+            UvIndex.text(response.value);
         });
 
         var countryCode = response.sys.country;
